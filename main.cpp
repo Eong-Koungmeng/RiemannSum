@@ -15,7 +15,9 @@ int main()
 	File << "n,L_n,R_n,M_n\n";
 	for (unsigned int i = 20; i <= 10000; i += 20)
 	{
-		File << i << std::setprecision(11) << ',' << LeftRiemannSum(0, 2, i) << ',' << RightRiemannSum(0, 2, i)
+		File << i << std::setprecision(11) << ',' 
+			<< LeftRiemannSum(0, 2, i) << ',' 
+			<< RightRiemannSum(0, 2, i)
 			<< ',' << MidPointRiemannSum(0, 2, i) << '\n';
 	}
 	std::cout << "Finished Writting...";
